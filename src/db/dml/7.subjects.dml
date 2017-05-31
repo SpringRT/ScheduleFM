@@ -1,0 +1,65 @@
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (1, 'Maths', 1);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (2, 'Physics', 1);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (2, 'Physics', 2);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (1, 'Maths', 2);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (1, 'Maths', 3);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (2, 'Physics', 3);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (3, 'Medicine', 3);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (4, 'Optica', 3);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (5, 'Engineering', 4);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (2, 'Physics', 4);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (1, 'Maths', 4);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (6, 'Laboratories', 5);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (7, 'Biology', 5);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (8, 'Chemistry', 5);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (3, 'Medicine', 5);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (9, 'Art', 6);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (10, 'Culture', 6);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (11, 'Music', 6);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (12, 'History', 6);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (13, 'Science', 7);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (14, 'Statistica', 7);
+
+INSERT INTO subjects(id, name, teacher_id)
+VALUES (15, 'Analytics', 7);

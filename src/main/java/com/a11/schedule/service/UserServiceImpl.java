@@ -1,0 +1,52 @@
+package com.a11.schedule.service;
+
+import com.a11.schedule.entity.User;
+import com.a11.schedule.repository.UserRepository;
+import com.google.common.collect.ImmutableSet;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    static final GrantedAuthority ADMIN = new SimpleGrantedAuthority("ROLE_ADMIN");
+    static final GrantedAuthority USER = new SimpleGrantedAuthority("ROLE_USER");
+
+    private final UserRepository userRepository;
+
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
+        name = name.trim();
+        User user =  userRepository.findByName(name);
+        if (user == null) {
+            throw new UsernameNotFoundException("Not found " + name);
+        }
+        return new org.springframework.security.core.userdetails.User(
+                user.name,
+                user.password,
+                user.enabled,
+                true, true, true,
+                ImmutableSet.of(new SimpleGrantedAuthority(user.role))
+        );
+    }
+
+    public boolean isAdmin() {
+        return checkAuthority(ADMIN);
+    }
+
+    public boolean isAuthorized() {
+        return checkAuthority(ADMIN) || checkAuthority(USER);
+    }
+
+    private boolean checkAuthority(GrantedAuthority authority) {
+        return SecurityContextHolder.getContext().getAuthentication().getAuthorities().contains(authority);
+    }
+}

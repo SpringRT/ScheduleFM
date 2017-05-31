@@ -1,0 +1,23 @@
+INSERT INTO faculties(id, name, university_id)
+VALUES (1, 'A', 1);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (2, 'FMMT', 5);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (3, 'NTF', 5);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (4, 'MPMI', 6);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (5, 'PT', 8);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (6, 'LC', 7);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (7, 'VL', 9);
+
+INSERT INTO faculties(id, name, university_id)
+VALUES (8, 'IK', 10);

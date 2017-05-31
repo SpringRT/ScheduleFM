@@ -1,0 +1,33 @@
+INSERT INTO universities(id, name, address, city_id)
+VALUES (1, 'Mephi', 'Kashirskaya st', 1);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (2, 'MSU', 'Leninskiye gori st', 1);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (3, 'SPbGU', 'Smolnogo st', 2);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (4, 'Politex', 'Politexnicheskaya st 29', 2);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (5, 'SamGTU', 'Molodogvardeiskaya st', 3);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (6, 'SGMU', 'Chapaevskaya st 89', 3);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (7, 'SGMU n.Razymovskogo', 'Kazachya st 112', 4);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (8, 'SGTU n.Gagarina', 'Politexnicheskaya st 77', 4);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (9, 'VGIIK', 'Chiolkovskogo st 4', 5);
+
+INSERT INTO universities(id, name, address, city_id)
+VALUES (10, 'VGTU', 'Lenin av 28', 5);
+
+
+
+
